@@ -13,5 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('landing');
+});
+
+Route::get('/loremTool', function()
+{
+	return View::make('loremTool');
+});
+
+Route::get('/generateUsers', function()
+{
+	return View::make('generateUsers');
 });
