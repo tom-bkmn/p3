@@ -21,7 +21,9 @@ Route::get('/loremTool', function()
 	return View::make('loremTool');
 });
 
+
 Route::get('/generateUsers', function()
 {
 	return View::make('generateUsers');
 });
+
