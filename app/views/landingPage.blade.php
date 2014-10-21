@@ -5,10 +5,10 @@
 @stop
 
 @section('landingPageIntro')
-   This is the landing page for the project.
+Welcome to the Developer's Best Friend.  This site is intended for developers who need to generate filler text for their Web site or other projects.  Currently two tools are offered to generate text: a tool for paragraph text using Lorem Ipsum text, and a tool to generate fake users.
 @stop
 
-@section('bodyContent_A')
+@section('bodyContent_1')
     This is a link to the lorem Ipsum Generator
     <br>
     <a href="/loremTool">Lorem Ipsum Generator</a> 
