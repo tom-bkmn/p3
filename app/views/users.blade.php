@@ -5,8 +5,10 @@
 @stop
 
 @section('bodyContent_1')
-     This is the Random Users Generator 
+        This is the Random User Generator 
+@stop
 
+@section('bodyContent_2')
      <!-- 1. Text box for a number 
              2. Two checkboxes
              3. Button to make it happen
@@ -15,29 +17,37 @@
     <form action="{{ url('generateUsers') }}" method="POST">
         <div>
             <label for='numberOfUsers'>Please enter the number for how many users to generate.  Maximum value is allowed is 99.</label><br>
-            <input type="text" maxlength=2 size=1 name='numberOfUsers' id='numberOfUsers'>
+            <input type="text" maxlength=2 size=1 name='numberOfUsers' id='numberOfUsers' >
             <br>
             <br>
-            <label for='appendANumber'>Include a Birthdate?</label><br>
-            <input type='checkbox' name='appendANumber' id='appendANumber'>
+            <label for='includeBirthdate'>Include a Birthdate?</label><br>
+            <input type='checkbox' name='includeBirthdate' id='includeBirthdate'>
             <br>
             <br>            
-            <label for='appendACharacter'>Include a Profile?</label><br>
-            <input type='checkbox' name='appendACharacter' id='appendACharacter'>
+            <label for='includeProfile'>Include a Profile?</label><br>
+            <input type='checkbox' name='includeProfile' id='includeProfile' value='1'>
             <br>
             <br>
             <input class="button" type='submit' value="Let's generate some People!">
         </div>
      </form>
 @stop
-@section('bodyContent_2')
+@section('bodyContent_3')
     <?php 
-        if(isset( $data)){
-            $faker = Faker\Factory::create();
-            $name = $faker->name;
-            echo $name."<br/>";
-            echo $faker->address."<br/>";
-            echo $name."  is a mean hippie with a weakness for high-end audio amplifiers and transducers."."<br/>";
+        if(isset( $data['numberOfUsers'])){
+            for ($i = 1; $i <= $data['numberOfUsers']; $i++) {
+                $faker = Faker\Factory::create();
+                $name = $faker->name;
+                echo $name."<br/>";
+                echo $faker->address."<br/>";
+	 if (isset($data['includeBirthdate'])) {
+                       echo "Birthdate: ".$faker->date($format='m-d-Y')."<br/>";
+	 }
+	 if (isset($data['includeProfile']) ) {
+	     echo "Profile: ".$name."  is a mean hippie with a weakness for high-end audio amplifiers and transducers."."<br/>";
+	 }
+                echo"<br/>";
+            }
         }
     ?>
 @stop

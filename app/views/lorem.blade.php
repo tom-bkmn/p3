@@ -29,10 +29,10 @@
 
 @section('bodyContent_2')
     <?php 
-        if(isset( $data)){
-        $generator = new Badcow\LoremIpsum\Generator();
-        $paragraphs = $generator->getParagraphs($data['numOfPara']);
-        echo implode('<p>', $paragraphs);
+        if(isset( $data['numOfPara'])){
+            $generator = new Badcow\LoremIpsum\Generator();
+            $paragraphs = $generator->getParagraphs($data['numOfPara']);
+            echo implode('<p>', $paragraphs);
         }
     ?>
 @stop
