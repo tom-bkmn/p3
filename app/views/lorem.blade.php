@@ -19,7 +19,7 @@
      <form action="{{ url('loremTool') }}" method="POST">
         <div>
             <label for='numberOfParagraphs'>Please enter an integer for the number of paragraphs.  The maximum is 10.</label><br>
-            <input type="text" maxlength=2 size=1 name='numOfPara' id='numOfPara' value='2'>
+            <input type="text" maxlength=2 size=1 name='numOfPara' id='numOfPara'>
             <br>
             <br>
             <input class="button" type='submit' value="Let's generate some Latin!">
@@ -29,7 +29,10 @@
 
 @section('bodyContent_2')
     <?php 
-         if(isset( $data)){
-             print_r($data); }
+        if(isset( $data)){
+        $generator = new Badcow\LoremIpsum\Generator();
+        $paragraphs = $generator->getParagraphs($data['numOfPara']);
+        echo implode('<p>', $paragraphs);
+        }
     ?>
 @stop

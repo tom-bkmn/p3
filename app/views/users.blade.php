@@ -29,17 +29,17 @@
             <input class="button" type='submit' value="Let's generate some People!">
         </div>
      </form>
-<?php
-$faker = Faker\Factory::create();
-$name = $faker->name;
-
-echo $name."<br/>";
-
-echo $faker->address."<br/>";
-
-echo $name."  is a mean hippie with a weakness for high-end retail audio and transducers."."<br/>";
-
-?>
+@stop
+@section('bodyContent_2')
+    <?php 
+        if(isset( $data)){
+            $faker = Faker\Factory::create();
+            $name = $faker->name;
+            echo $name."<br/>";
+            echo $faker->address."<br/>";
+            echo $name."  is a mean hippie with a weakness for high-end audio amplifiers and transducers."."<br/>";
+        }
+    ?>
 @stop
 
 

@@ -32,4 +32,19 @@ Route::get('/loremTool', function()
     	->with('data', $data);
 });
 
+Route::post('/generateUsers', function()
+{
+    $data = Input::all();
+    //var_dump($data);
+    return View::make('users')
+    	->with('data', $data);
+});
+
+Route::get('/generateUsers', function()
+{
+    $data['aat']='initial';
+    return View::make('users')
+    	->with('data', $data);
+});
+
 
