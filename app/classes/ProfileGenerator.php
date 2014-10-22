@@ -2,6 +2,12 @@
 
 class ProfileGenerator {
 
+    // This class generates a biographical information for the fake users.  It's a nice alternative to using yet more Lorem text.
+    //  The class requires a first and last name with the appropriate gender.  It will return a brief biographical sketch that includes
+    //  a career and a hobby in one complete sentence.  Pronouns are gender-specific and are calculated based on the gender
+    //  value set in the construtor.  I notice there are still a few grammatically awkward sentences that can be generated, but
+    //  on the whole the system works pretty well.
+
     // Properties
     private $firstName;
     private $lastName;
@@ -79,7 +85,7 @@ class ProfileGenerator {
         }
     }
 
-    
+    // Pick a verb
     private function getHobbyVerb() {
         $verb=array(" enjoys ", 
                             " has a weakness for ",
@@ -94,16 +100,17 @@ class ProfileGenerator {
         return $verb[$this->getRndNumber() ];
     }
 
+    // Pick a hobby at random
     private function getHobbyObject() {
         $object=array(" gardening.", 
-                            " martial arts weaponry.",
+                            " martial arts, meditation and Japanese tea ceremonies.",
                             " studying herpetology.", 
                             " collecting and watching the worst movies ever made.", 
                             " cooking.", 
                             " alchemy.",
-                            " street racing .....for pink slips, high cash prizes and any brawl that often results.",
+                            " street racing .....for pink slips, high cash prizes and associated mayhem.",
                             " modular synthesizers and all things audio.",
-                            " conspiracy theory.",
+                            " reading conspiracy theory.",
                             " looking for the best Lebanese restaurant in the tristate area.");
         return $object[$this->getRndNumber()] ;
     }

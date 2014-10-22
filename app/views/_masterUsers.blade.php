@@ -7,7 +7,9 @@
 </head>
 <body>
     <div class="center">
-        <h1>@yield('bodyContent_1')</h1>
+        <a href="/">Home</a> 
+        <a href="/loremTool">Lorem Generator</a> 
+        <h2>@yield('bodyContent_1')</h2>
         <h2>@yield('bodyContent_2')</h2>
         <p>@yield('bodyContent_3')</p>
     </div>

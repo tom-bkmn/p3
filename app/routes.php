@@ -27,9 +27,7 @@ Route::post('/loremTool', function()
 
 Route::get('/loremTool', function()
 {
-    $data['aat']='initial';
-    return View::make('lorem')
-    	->with('data', $data);
+    return View::make('lorem');
 });
 
 Route::post('/generateUsers', function()
@@ -42,9 +40,7 @@ Route::post('/generateUsers', function()
 
 Route::get('/generateUsers', function()
 {
-    $data['aat']='initial';
-    return View::make('users')
-    	->with('data', $data);
+    return View::make('users');
 });
 
 

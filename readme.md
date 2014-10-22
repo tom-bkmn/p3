@@ -1,25 +1,28 @@
-## Laravel PHP Framework
+p3
+==
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+###Tom Beikman's P3 assigment for Dynamic Web Applications, CSCI E-15
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+• Live URL of the project:
+ [p3.tombeikman.me](http://p3.tombeikman.me)
+ 
+• Project description: The goal of the project is to provide tools for the generation of fake content used in the development of Web sites.  There are two tools offered:
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+1. Lorem Epsum.  Paragraphs of text are available.  The number of paragraphs are user defined.
+2. Fake users.  Generate a list of fake users with first and last name, birthdate and biographical data. 
+ 
+• Demo information:  Right now, i'm still hoping to record and upload the demo.
+The url to watch the demo is: [watch this space].
+ 
+• Additional details:  Attempted a couple extra features:
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+1. Option to include birthdate in user profile.
+2. Option to include profile data.  This is accomplised via a custom, homemade, class.  And dig this, the bio is programmatically composed from multiple text fragments so that each user may have a unique, if fake, biographical sketch.  Find the class in: app\classes\ProfileGenerator.php
+3. User input validation: Make sure users don't enter text when integers are requested, and that the values entered are within accepted values.
+ 
+• Third party resources acknowledgment: 
 
-## Official Documentation
+1. Badcow Lorem Ipsum: https://packagist.org/packages/badcow/lorem-ipsum
+2. Fzaninotto/faker for the best fake users this side of the Mississippi: https://packagist.org/packages/fzaninotto/faker
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
 
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
