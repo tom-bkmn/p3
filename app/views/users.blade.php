@@ -37,14 +37,24 @@
         if(isset( $data['numberOfUsers'])){
             for ($i = 1; $i <= $data['numberOfUsers']; $i++) {
                 $faker = Faker\Factory::create();
-                $name = $faker->name;
-                echo $name."<br/>";
+                $genderSelect = rand (0 , 1);
+                $gender = "";
+                if ($genderSelect) {
+                    $gender = "female";         
+                } else {
+                    $gender = "male";
+                }
+
+                $firstName = $faker->firstName($gender);
+                $lastName = $faker->lastName;
+                echo $firstName . " " . $lastName . "<br/>";
                 echo $faker->address."<br/>";
 	 if (isset($data['includeBirthdate'])) {
                        echo "Birthdate: ".$faker->date($format='m-d-Y')."<br/>";
 	 }
 	 if (isset($data['includeProfile']) ) {
-	     echo "Profile: ".$name."  is a mean hippie with a weakness for high-end audio amplifiers and transducers."."<br/>";
+                       $profile = new ProfileGenerator($firstName, $lastName, $gender);
+	     echo "Profile: ". $profile->getProfile() ."<br/>";
 	 }
                 echo"<br/>";
             }
