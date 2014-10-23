@@ -18,7 +18,7 @@
         <div>
             <br>
             <br>
-            <label for="numberOfParagraphs">Please enter an integer from 1 to 10.</label><br>
+            <label for="numOfPara">Please enter an integer from 1 to 10.</label><br>
             <input type="text" maxlength=2 size=1 name="numOfPara" id="numOfPara">
             <br>
             <br>
