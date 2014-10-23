@@ -104,13 +104,13 @@ class ProfileGenerator {
     private function getHobbyObject() {
         $object=array(" gardening.", 
                             " martial arts, meditation and Japanese tea ceremonies.",
-                            " studying herpetology.", 
+                            " studying painting.", 
                             " collecting and watching the worst movies ever made.", 
                             " cooking.", 
                             " alchemy.",
                             " street racing .....for pink slips, high cash prizes and associated mayhem.",
-                            " modular synthesizers and all things audio.",
-                            " reading conspiracy theory.",
+                            " modular synthesizers and professional audio recording.",
+                            " learning about . . . things......and stuff.",
                             " looking for the best Lebanese restaurant in the tristate area.");
         return $object[$this->getRndNumber()] ;
     }

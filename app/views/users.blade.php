@@ -13,7 +13,7 @@
              2. Two checkboxes
              3. Button to generate the users.
      -->
-    <form action="{{ url('generateUsers') }}" method="POST">
+    <form class="form" action="{{ url('generateUsers') }}" method="POST">
         <div>
             <label for='numberOfUsers'>Please enter a number for how many users to generate.  Maximum value is allowed is 99.</label><br>
             <input type="text" maxlength=2 size=1 name='numberOfUsers' id='numberOfUsers' >

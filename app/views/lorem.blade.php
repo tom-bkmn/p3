@@ -14,7 +14,7 @@
              3. Button to generate the text.
      -->
      
-     <form action="{{ url('loremTool') }}" method="POST">
+     <form class="form" action="{{ url('loremTool') }}" method="POST">
         <div>
             <br>
             <br>
