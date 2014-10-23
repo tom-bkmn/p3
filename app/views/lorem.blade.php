@@ -11,17 +11,19 @@
              1. Text box for a number 
              3. Button to generate the text.
      -->
+     <div>
      <form action="{{ url('loremTool') }}" method="POST">
         <div>
             <br>
             <br>
-            <label for='numberOfParagraphs'>Please enter an integer from 1 to 10.</label><br>
-            <input type="text" maxlength=2 size=1 name='numOfPara' id='numOfPara'>
+            <label for="numberOfParagraphs">Please enter an integer from 1 to 10.</label><br>
+            <input type="text" maxlength=2 size=1 name="numOfPara" id="numOfPara">
             <br>
             <br>
-            <input class="button" type='submit' value="Let's generate some Latin!">
+            <input class="button" type="submit" value="Let's generate some Latin!">
         </div>
      </form>
+     </div>
 @stop
 
 @section('bodyContent_2')

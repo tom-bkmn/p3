@@ -9,10 +9,10 @@
 <body>
     <div class="center">
         <h2>@yield('landingPageIntro')</h2>
-        <br/>
-        <br/>
+        <br>
+        <br>
         <h3>@yield('bodyContent_1')</h3>
-        <br/>
+        <br>
         <h3>@yield('bodyContent_2')</h3>
     </div>
 
