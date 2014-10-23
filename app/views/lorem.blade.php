@@ -5,9 +5,10 @@
 @stop
 
 @section('bodyContent_1')
-<div>
      This is the Lorem text generator.  Use the text box below to enter a number for the number of paragraphs of Lorem text.
-     
+@stop
+
+@section('bodyContent_form')
      <!-- Form controls: 
              1. Text box for a number 
              3. Button to generate the text.
@@ -24,7 +25,6 @@
             <input class="button" type="submit" value="Let's generate some Latin!">
         </div>
      </form>
-     </div>
 @stop
 
 @section('bodyContent_2')

@@ -11,6 +11,7 @@
         <a href="/">Home</a> 
         <a href="/generateUsers">Generate Users</a> 
         <h1>@yield('bodyContent_1')</h1>
+        @yield('bodyContent_form')
         <h3>@yield('bodyContent_2')</h3>
     </div>
 </body>
