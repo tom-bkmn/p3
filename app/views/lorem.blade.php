@@ -5,13 +5,14 @@
 @stop
 
 @section('bodyContent_1')
+<div>
      This is the Lorem text generator.  Use the text box below to enter a number for the number of paragraphs of Lorem text.
      
      <!-- Form controls: 
              1. Text box for a number 
              3. Button to generate the text.
      -->
-     <div>
+     
      <form action="{{ url('loremTool') }}" method="POST">
         <div>
             <br>
