@@ -11,7 +11,7 @@
         <a href="/">Home</a> 
         <a href="/loremTool">Lorem Generator</a> 
         <h2>@yield('bodyContent_1')</h2>
-        <h2>@yield('bodyContent_2')</h2>
+        @yield('bodyContent_2')
         <p>@yield('bodyContent_3')</p>
     </div>
 </body>

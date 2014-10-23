@@ -13,7 +13,6 @@
              2. Two checkboxes
              3. Button to generate the users.
      -->
-    <div>
     <form action="{{ url('generateUsers') }}" method="POST">
         <div>
             <label for='numberOfUsers'>Please enter a number for how many users to generate.  Maximum value is allowed is 99.</label><br>
@@ -31,7 +30,6 @@
             <input class="button" type='submit' value="Let's generate some People!">
         </div>
      </form>
-     </div>
 @stop
 @section('bodyContent_3')
     <?php 
