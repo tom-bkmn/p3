@@ -12,7 +12,7 @@ p3
 2. Fake users.  Generate a list of fake users with first and last name, birthdate and biographical data. 
  
 • Demo information:  I recorded the demo using Jing and uploaded to screencast.com.
-Watch the demo is: http://screencast.com/t/vQICXND8g.
+Watch the demo here: http://screencast.com/t/vQICXND8g.
  
 • Additional details:  Attempted a couple extra features:
 
