@@ -11,8 +11,8 @@ p3
 1. Lorem Epsum.  Paragraphs of text are available.  The number of paragraphs are user defined.
 2. Fake users.  Generate a list of fake users with first and last name, birthdate and biographical data. 
  
-• Demo information:  Right now, i'm still hoping to record and upload the demo.
-The url to watch the demo is: http://screencast.com/t/vQICXND8g.
+• Demo information:  I recorded the demo using Jing and uploaded to screencast.com.
+Watch the demo is: http://screencast.com/t/vQICXND8g.
  
 • Additional details:  Attempted a couple extra features:
 
