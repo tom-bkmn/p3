@@ -12,7 +12,7 @@ p3
 2. Fake users.  Generate a list of fake users with first and last name, birthdate and biographical data. 
  
 • Demo information:  Right now, i'm still hoping to record and upload the demo.
-The url to watch the demo is: [watch this space].
+The url to watch the demo is: http://screencast.com/t/vQICXND8g.
  
 • Additional details:  Attempted a couple extra features:
 
